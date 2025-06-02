@@ -1,0 +1,53 @@
+cd simple-webapps/day-1
+  509  python app.py
+  510  docker images
+  511  docker build image .
+  512  docker build simple-webpage .
+  513  docker build -t simple-webpage .
+  514  docker images
+  515  docker login
+  516  docker tag simple-webpage veenarajpoot117/simple-webpage
+  517  docker imahes
+  518  docker images
+  519  docker push veenarajpoot117/simple-webpage
+  520  gcloud container clusters get-credentials cluster-1 --zone us-central1-a --project astute-vortex-408805
+  521  kubectl get nodes
+  522  kubectl get all
+  523  vi deployment.yaml
+  524  cat deployment.yaml
+  525  kubectl apply -f deployment.yaml
+  526  vi deployment.yaml
+  527  kubectl apply -f deployment.yaml
+  528  cat deployment.yaml
+  529  vi deployment.yaml
+  530  kubectl apply -f deployment.yaml
+  531  vi deployment.yaml
+  532  cat deployment.yaml
+  533  kubectl apply -f deployment.yaml
+  534  vi service.yaml
+  535  kubectl apply -f service.yaml
+  536  kubectl get all
+  537  kubectl get srv
+  538  kubectl get svc
+  539  kubectl port-forward service/simple-webpage-service 8080:8080
+  540  kubectl get pods
+  541  kubectl describe pod simple-webpage-7d9878949c-9cjbp 
+  542  kubectl get pods
+  543  kubectl describe pod simple-webpage-7d9878949c-9cjbp 
+  544  kubectl get pods
+  545  kubectl describe pod simple-webpage-7d9878949c-9cjbp 
+  546  kubectl get pods
+  547  kubectl get svc
+  548  kubectl port-forward service/simple-webpage-service 8080:8080
+  549  kubectl get pods
+  550  cd .. /
+  551  cd .. 
+  552  git init
+  553  git config --global user.name veenarajpoot117
+  554  git config --global user.email veena2018rajput@gmail.com
+  555  git remote add origin https://github.com/veenarajpoot117/simple-website.git
+  556  git remote -v
+  557  git add .
+  558  git commit -m "Initial commit from GCP Cloud Shell"
+  559  git branch -M main
+  560  git push -u origin main
