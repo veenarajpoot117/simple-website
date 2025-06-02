@@ -1,0 +1,25 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: simple-webpage
+  labels:
+    app: simple-webpage
+    env: test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: simple-webpage
+      env: test
+  template:
+    metadata:
+      name: simple-webpage-pod
+      labels:
+        app: simple-webpage
+        env: test
+    spec:
+      containers:
+      - name: simple-webpage
+        image: veenarajpoot117/simple-webpage
+        ports:
+        - containerPort: 8080
